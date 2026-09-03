@@ -9,11 +9,12 @@
     "analysis": "python3 analytics/build_analysis.py",
     "dev": "vinext dev",
     "build": "vinext build",
+    "build:pages": "APPLE_PAGES_BUILD=1 vinext build && node scripts/prepare-pages.mjs",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
     "format": "oxfmt",
     "test:analysis": "python3 -m unittest discover -s analytics -p 'test_*.py' -v",
-    "check": "pnpm run analysis && pnpm run test:analysis && oxlint app/page.tsx && vinext build"
+    "check": "pnpm run analysis && pnpm run test:analysis && oxlint app/page.tsx app/dashboard.tsx && vinext build"
   },
   "dependencies": {
     "react": "19.2.6",

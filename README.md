@@ -1,5 +1,9 @@
 # Apple Mac Competitive Strength Dashboard
 
+### [View the interactive dashboard →](https://landerosr.github.io/apple-mac-competitive-analysis/)
+
+Open the dashboard in your browser—no installation required.
+
 I built this project to answer a question I care about from both a finance and technology perspective: **Is Apple actually strong in the computer market, or does the Mac only look strong because it occupies a premium niche?**
 
 My interest comes from working as an Apple Technical Advisor and following the MacBook Pro product line. I wanted the analysis to go beyond a product-spec comparison, so I combined market shipments, Mac financial results, a small forecasting exercise, and a transparent scenario model in one dashboard.
@@ -65,7 +69,11 @@ pnpm run dev
 
 Then open `http://localhost:3000`.
 
-Requirements: Node.js 22.13 or newer, pnpm, and Python 3.10 or newer. On Windows, activate the environment with `.venv\Scripts\activate` instead. This is a local dashboard; uploading the source to GitHub does not by itself publish a live website.
+Requirements: Node.js 22.13 or newer, pnpm, and Python 3.10 or newer. On Windows, activate the environment with `.venv\Scripts\activate` instead.
+
+## Publish to GitHub Pages
+
+Run `pnpm run build:pages` on macOS or Linux, then commit the generated `docs/` folder. GitHub Pages serves the `main` branch's `/docs` folder. This preserves the interactive charts and scenario controls without a server.
 
 To rebuild and verify the project:
 
