@@ -1,0 +1,303 @@
+{
+  "asOf": "September 3, 2026",
+  "market": [
+    {
+      "vendor": "Lenovo",
+      "shipments_2025_m": 73.567,
+      "share_2025_pct": 27.2,
+      "share_change_pp": 1.9,
+      "growth_2025_pct": 17.6,
+      "q4_2025_growth_pct": 14.3,
+      "market_rank": 1
+    },
+    {
+      "vendor": "HP",
+      "shipments_2025_m": 57.457,
+      "share_2025_pct": 21.3,
+      "share_change_pp": -0.1,
+      "growth_2025_pct": 8.3,
+      "q4_2025_growth_pct": 12.1,
+      "market_rank": 2
+    },
+    {
+      "vendor": "Dell",
+      "shipments_2025_m": 41.392,
+      "share_2025_pct": 15.3,
+      "share_change_pp": -0.6,
+      "growth_2025_pct": 4.9,
+      "q4_2025_growth_pct": 18.2,
+      "market_rank": 3
+    },
+    {
+      "vendor": "Apple",
+      "shipments_2025_m": 24.826,
+      "share_2025_pct": 9.2,
+      "share_change_pp": 0.1,
+      "growth_2025_pct": 10.3,
+      "q4_2025_growth_pct": 5.7,
+      "market_rank": 4
+    },
+    {
+      "vendor": "ASUS",
+      "shipments_2025_m": 18.512,
+      "share_2025_pct": 6.9,
+      "share_change_pp": -0.1,
+      "growth_2025_pct": 6.7,
+      "q4_2025_growth_pct": 2.8,
+      "market_rank": 5
+    },
+    {
+      "vendor": "Acer",
+      "shipments_2025_m": 16.963,
+      "share_2025_pct": 6.3,
+      "share_change_pp": -0.5,
+      "growth_2025_pct": 0.2,
+      "q4_2025_growth_pct": 0.8,
+      "market_rank": 6
+    }
+  ],
+  "revenueHistory": [
+    {
+      "period": "FY23 Q1",
+      "fiscal_year": 2023,
+      "quarter": 1,
+      "revenue_usd_bn": 7.735
+    },
+    {
+      "period": "FY23 Q2",
+      "fiscal_year": 2023,
+      "quarter": 2,
+      "revenue_usd_bn": 7.168
+    },
+    {
+      "period": "FY23 Q3",
+      "fiscal_year": 2023,
+      "quarter": 3,
+      "revenue_usd_bn": 6.84
+    },
+    {
+      "period": "FY23 Q4",
+      "fiscal_year": 2023,
+      "quarter": 4,
+      "revenue_usd_bn": 7.614
+    },
+    {
+      "period": "FY24 Q1",
+      "fiscal_year": 2024,
+      "quarter": 1,
+      "revenue_usd_bn": 7.78
+    },
+    {
+      "period": "FY24 Q2",
+      "fiscal_year": 2024,
+      "quarter": 2,
+      "revenue_usd_bn": 7.451
+    },
+    {
+      "period": "FY24 Q3",
+      "fiscal_year": 2024,
+      "quarter": 3,
+      "revenue_usd_bn": 7.009
+    },
+    {
+      "period": "FY24 Q4",
+      "fiscal_year": 2024,
+      "quarter": 4,
+      "revenue_usd_bn": 7.744
+    },
+    {
+      "period": "FY25 Q1",
+      "fiscal_year": 2025,
+      "quarter": 1,
+      "revenue_usd_bn": 8.987
+    },
+    {
+      "period": "FY25 Q2",
+      "fiscal_year": 2025,
+      "quarter": 2,
+      "revenue_usd_bn": 7.949
+    },
+    {
+      "period": "FY25 Q3",
+      "fiscal_year": 2025,
+      "quarter": 3,
+      "revenue_usd_bn": 8.046
+    },
+    {
+      "period": "FY25 Q4",
+      "fiscal_year": 2025,
+      "quarter": 4,
+      "revenue_usd_bn": 8.726
+    },
+    {
+      "period": "FY26 Q1",
+      "fiscal_year": 2026,
+      "quarter": 1,
+      "revenue_usd_bn": 8.386
+    },
+    {
+      "period": "FY26 Q2",
+      "fiscal_year": 2026,
+      "quarter": 2,
+      "revenue_usd_bn": 8.399
+    },
+    {
+      "period": "FY26 Q3",
+      "fiscal_year": 2026,
+      "quarter": 3,
+      "revenue_usd_bn": 10.352
+    }
+  ],
+  "forecast": {
+    "period": "FY26 Q4",
+    "model": "Four-quarter mean",
+    "point": 8.97,
+    "lower80": 7.96,
+    "upper80": 9.97,
+    "models": [
+      {
+        "model": "Four-quarter mean",
+        "mae": 0.634,
+        "rmse": 0.958,
+        "mape": 6.7
+      },
+      {
+        "model": "Trend + seasonality",
+        "mae": 0.694,
+        "rmse": 0.991,
+        "mape": 7.5
+      },
+      {
+        "model": "Seasonal naive",
+        "mae": 1.012,
+        "rmse": 1.173,
+        "mape": 11.2
+      }
+    ]
+  },
+  "strengthComponents": [
+    {
+      "key": "scale",
+      "label": "Market scale",
+      "score": 46,
+      "weight": 20,
+      "evidence": "9.2% worldwide PC share; rank #4"
+    },
+    {
+      "key": "shipments",
+      "label": "Shipment momentum",
+      "score": 55,
+      "weight": 20,
+      "evidence": "10.3% growth vs. 9.1% market growth"
+    },
+    {
+      "key": "share",
+      "label": "Share direction",
+      "score": 52,
+      "weight": 15,
+      "evidence": "+0.1 percentage-point annual change"
+    },
+    {
+      "key": "financial",
+      "label": "Mac financial momentum",
+      "score": 93,
+      "weight": 25,
+      "evidence": "28.7% Q3 FY26 Mac revenue growth"
+    },
+    {
+      "key": "product",
+      "label": "Premium product position",
+      "score": 100,
+      "weight": 20,
+      "evidence": "Meets all four disclosed feature thresholds in this model"
+    }
+  ],
+  "products": [
+    {
+      "vendor": "Apple",
+      "model": "MacBook Pro family (M5 / M5 Pro / M5 Max)",
+      "segment": "Professional",
+      "starting_price_usd": 1699.0,
+      "max_memory_gb": 128,
+      "starting_storage_tb": 1.0,
+      "display_peak_nits": 1600.0,
+      "weight_lb": null,
+      "battery_metric": "Hours",
+      "battery_value": 24.0,
+      "positioning_note": "Broad pro workflow, battery, display and ecosystem differentiation",
+      "source_url": "https://www.apple.com/newsroom/2026/03/apple-introduces-macbook-pro-with-all-new-m5-pro-and-m5-max/"
+    },
+    {
+      "vendor": "Lenovo",
+      "model": "ThinkPad P1 Gen 8",
+      "segment": "Mobile workstation",
+      "starting_price_usd": null,
+      "max_memory_gb": 64,
+      "starting_storage_tb": 4.0,
+      "display_peak_nits": null,
+      "weight_lb": null,
+      "battery_metric": "Watt-hours",
+      "battery_value": 90.0,
+      "positioning_note": "Enterprise manageability, serviceability and discrete graphics options",
+      "source_url": "https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadp/lenovo-thinkpad-p1-gen-8-16-inch-intel-mobile-workstation/21q8cto1wwus1"
+    },
+    {
+      "vendor": "HP",
+      "model": "ZBook Ultra G1a",
+      "segment": "Mobile workstation",
+      "starting_price_usd": null,
+      "max_memory_gb": 64,
+      "starting_storage_tb": 1.0,
+      "display_peak_nits": null,
+      "weight_lb": 3.46,
+      "battery_metric": "Watt-hours",
+      "battery_value": 74.5,
+      "positioning_note": "Portable workstation with enterprise security and local-AI positioning",
+      "source_url": "https://www.hp.com/us-en/shop/pdp/hp-zbook-ultra-14-inch-g1a-mobile-workstation-pc-wolf-pro-security-edition-bn2u8ua-aba"
+    },
+    {
+      "vendor": "ASUS",
+      "model": "ProArt P16 H7607",
+      "segment": "Creator / AI workstation",
+      "starting_price_usd": null,
+      "max_memory_gb": 128,
+      "starting_storage_tb": null,
+      "display_peak_nits": 1600.0,
+      "weight_lb": 3.9,
+      "battery_metric": "Watt-hours",
+      "battery_value": 99.9,
+      "positioning_note": "Creator-first Windows alternative with strong local-AI and display specifications",
+      "source_url": "https://www.asus.com/us/laptops/for-creators/proart/proart-p16-h7607/"
+    }
+  ],
+  "signals": {
+    "marketRank": 4,
+    "marketShare": 9.2,
+    "shipmentGrowth": 10.3,
+    "marketGrowth": 9.1,
+    "macRevenueLatest": 10.352,
+    "macRevenueGrowth": 28.7
+  },
+  "sources": [
+    {
+      "label": "Gartner \u2014 2025 worldwide PC shipments",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-1-20-gartner-says-worldwide-pc-shipments-increased-9-point-3-percent-in-fourth-quarter-of-2025-and-9-point-1-percent-for-the-full-year",
+      "use": "Vendor shipment, share and growth estimates"
+    },
+    {
+      "label": "Apple \u2014 FY26 Q3 financial statements",
+      "url": "https://www.apple.com/newsroom/pdfs/fy2026q3/FY26_Q3_Consolidated_Financial_Statements.pdf",
+      "use": "Latest Mac revenue and year-over-year comparison"
+    },
+    {
+      "label": "Apple Investor Relations \u2014 quarterly reports",
+      "url": "https://investor.apple.com/investor-relations/default.aspx",
+      "use": "Historical quarterly Mac net sales"
+    },
+    {
+      "label": "Apple \u2014 MacBook Pro M5 press release",
+      "url": "https://www.apple.com/newsroom/2026/03/apple-introduces-macbook-pro-with-all-new-m5-pro-and-m5-max/",
+      "use": "Published product specifications and U.S. starting prices"
+    }
+  ]
+}
