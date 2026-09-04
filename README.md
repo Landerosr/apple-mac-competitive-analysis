@@ -2,7 +2,7 @@
 
 ### [View the interactive dashboard →](https://landerosr.github.io/apple-mac-competitive-analysis/)
 
-Open the dashboard in your browser—no installation required.
+Open the dashboard in your browser
 
 I built this project to answer a question I care about from both a finance and technology perspective: **Is Apple actually strong in the computer market, or does the Mac only look strong because it occupies a premium niche?**
 
