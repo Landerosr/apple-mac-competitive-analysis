@@ -1,5 +1,7 @@
 # Apple Mac Competitive Strength Dashboard
 
+The Product tab now compares specific M5, M5 Pro and HP ZBook configurations with editable USD prices, price premiums and included memory/storage per $1,000. Apple defaults are March 2026 reference prices, not live quotes; HP needs a user-supplied quote. Source links and the review date appear in the interface. Capacity ratios are not performance benchmarks and do not affect the market-strength score. Family-level specifications remain separate from configuration-level value calculations.
+
 ### [View the interactive dashboard →](https://landerosr.github.io/apple-mac-competitive-analysis/)
 
 Open the dashboard in your browser

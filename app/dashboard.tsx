@@ -19,6 +19,7 @@ import {
 import { ArrowUpRight, ExternalLink, Info, RefreshCcw } from 'lucide-react';
 
 import analysis from '@/lib/analysis.json';
+import ValueComparison from './value-comparison';
 import { Button } from '@/components/ui/button';
 import { Slider } from '@/components/ui/slider';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -653,6 +654,7 @@ export default function Dashboard() {
             </TabsContent>
 
             <TabsContent value="product" className="mt-0">
+              <ValueComparison />
               <div className="mb-8 max-w-3xl">
                 <p className="text-sm text-neutral-500">Premium professional notebooks</p>
                 <h3 className="mt-2 text-2xl font-medium tracking-[-0.035em]">
@@ -669,7 +671,7 @@ export default function Dashboard() {
                     <TableRow className="border-neutral-200 hover:bg-transparent">
                       <TableHead className="min-w-64 pl-0 text-xs font-medium uppercase tracking-[0.1em] text-neutral-400">Product</TableHead>
                       <TableHead className="text-xs font-medium uppercase tracking-[0.1em] text-neutral-400">Position</TableHead>
-                      <TableHead className="text-right text-xs font-medium uppercase tracking-[0.1em] text-neutral-400">Memory</TableHead>
+                      <TableHead className="text-right text-xs font-medium uppercase tracking-[0.1em] text-neutral-400">Max family memory</TableHead>
                       <TableHead className="text-right text-xs font-medium uppercase tracking-[0.1em] text-neutral-400">Display</TableHead>
                       <TableHead className="min-w-80 pr-0 text-xs font-medium uppercase tracking-[0.1em] text-neutral-400">Strategic read</TableHead>
                     </TableRow>
