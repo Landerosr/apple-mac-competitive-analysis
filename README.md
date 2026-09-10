@@ -1,5 +1,11 @@
 # Apple Mac Competitive Strength Dashboard
 
+## Interactive MacBook teardown
+
+The 3D teardown section embeds [Inside a MacBook](https://inside-macbook.vercel.app/) by [Pulkit Saraf](https://github.com/Pulkit7070/inside-macbook), whose source and procedural geometry are MIT licensed. This third-party viewer is credited in the interface and loads only when a reader chooses to explore. Its source is not copied into this repository; availability depends on the creator's hosting. A direct full-screen link remains available if embedding fails.
+
+Readers can rotate, zoom, separate and reassemble the model, and inspect components using the viewer's controls. The model is a **simplified educational study of the 14-inch 2026 M5 Pro**, not Apple's CAD or a service/repair model. It is not automatically relabeled when a reader chooses an Air or base M5 in the buying guide. It does not establish upgradeability or affect buying recommendations. Browser WebGL support and third-party network access are required.
+
 ## Buy now or wait: consumer guide
 
 The first screen now helps a reader decide whether to replace their laptop. It compares three exact starting configurations: 13-inch M5 Air (16GB/512GB), 14-inch M5 Pro laptop (16GB/1TB, base M5 chip), and 14-inch M5 Pro laptop with the M5 Pro chip (24GB/1TB).
