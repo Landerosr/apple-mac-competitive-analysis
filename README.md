@@ -1,5 +1,22 @@
 # Apple Mac Competitive Strength Dashboard
 
+## Buy now or wait: consumer guide
+
+The first screen now helps a reader decide whether to replace their laptop. It compares three exact starting configurations: 13-inch M5 Air (16GB/512GB), 14-inch M5 Pro laptop (16GB/1TB, base M5 chip), and 14-inch M5 Pro laptop with the M5 Pro chip (24GB/1TB).
+
+Product facts and U.S. starting prices come from Apple's real March 3, 2026 announcements, reviewed September 10, 2026. These are **dated published reference prices, not live checkout prices**. The shop pages confirmed configurations but did not expose a verifiable current checkout price in the retrieved content. We do not fill that gap with fabricated quotes. Sources:
+
+- [Apple M5 Air announcement](https://www.apple.com/newsroom/2026/03/apple-introduces-the-new-macbook-air-with-m5/)
+- [Apple M5 Pro / Max announcement and updated base M5 configuration](https://www.apple.com/newsroom/2026/03/apple-introduces-macbook-pro-with-all-new-m5-pro-and-m5-max/)
+- [Apple Air store](https://www.apple.com/shop/buy-mac/macbook-air)
+- [Apple Pro store](https://www.apple.com/shop/buy-mac/macbook-pro)
+
+The guide asks about budget, current laptop condition, workload and software compatibility. Readers may supply an actual quote; it is labeled user-provided and is cleared on a model change. The quote comparison uses `(published reference - quote) / published reference × 100`, not a historical-low or market-wide discount estimate.
+
+Decision rules are deliberately transparent and separate from observed facts: validate inputs, check software, check budget, assess replacement need, check workload fit, then require a current quote before the affirmative buy recommendation. These are judgment rules, not a trained prediction model. A working laptop supports waiting; a limiting laptop with compatible software and an affordable quote supports buying. No synthetic data, assumed sale prices or predicted launch dates are used in this guide. Revenue forecasts and the older illustrative competitive score remain in their separate research sections and do not drive consumer advice.
+
+This is a limited shortlist, not a ranking of every Mac or Windows laptop. Actual app performance, upgraded configurations, taxes, warranty, retailer availability and ownership costs need separate consideration. Neither launch age nor Apple's revenue growth establishes whether a consumer should buy today.
+
 The Product tab now compares specific M5, M5 Pro and HP ZBook configurations with editable USD prices, price premiums and included memory/storage per $1,000. Apple defaults are March 2026 reference prices, not live quotes; HP needs a user-supplied quote. Source links and the review date appear in the interface. Capacity ratios are not performance benchmarks and do not affect the market-strength score. Family-level specifications remain separate from configuration-level value calculations.
 
 ### [View the interactive dashboard →](https://landerosr.github.io/apple-mac-competitive-analysis/)

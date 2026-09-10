@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Apple Mac Competitive Strength | Rodolfo Landeros',
+  title: 'Mac Buying Guide & Competitive Analysis | Rodolfo Landeros',
   description:
-    'An interactive analysis of Apple Mac market share, financial momentum, premium product positioning, and forecast scenarios.',
+    'Should you buy a Mac or wait? Compare your needs with sourced product facts and dated prices, alongside Mac market and revenue research.',
 };
 
 export default function RootLayout({

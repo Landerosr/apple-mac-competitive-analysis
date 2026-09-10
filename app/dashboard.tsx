@@ -20,6 +20,7 @@ import { ArrowUpRight, ExternalLink, Info, RefreshCcw } from 'lucide-react';
 
 import analysis from '@/lib/analysis.json';
 import ValueComparison from './value-comparison';
+import BuyingGuide from './buying-guide';
 import { Button } from '@/components/ui/button';
 import { Slider } from '@/components/ui/slider';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -364,6 +365,7 @@ export default function Dashboard() {
             <span className="text-sm text-neutral-500">Apple Mac analysis</span>
           </a>
           <nav className="flex items-center gap-5 text-sm text-neutral-500" aria-label="Page links">
+            <a href="#buying-guide" className="text-blue-700">Buy or wait</a>
             <a href="#model" className="hidden transition hover:text-neutral-950 sm:block">
               Model
             </a>
@@ -375,6 +377,7 @@ export default function Dashboard() {
       </header>
 
       <div id="top" className="mx-auto max-w-[1180px] px-5 pb-16 sm:px-8">
+        <BuyingGuide />
         <section className="grid gap-12 border-b border-neutral-200 py-16 sm:py-20 lg:grid-cols-[1fr_260px] lg:items-end lg:py-24">
           <div>
             <div className="mb-8 flex items-center gap-3 text-xs font-medium uppercase tracking-[0.16em] text-neutral-400">
@@ -382,11 +385,11 @@ export default function Dashboard() {
               <span className="h-px w-8 bg-neutral-300" />
               <span>{analysis.asOf}</span>
             </div>
-            <h1 className="max-w-4xl text-5xl font-medium leading-[0.98] tracking-[-0.065em] text-neutral-950 sm:text-6xl lg:text-[72px]">
+            <h2 className="max-w-4xl text-5xl font-medium leading-[0.98] tracking-[-0.065em] text-neutral-950 sm:text-6xl lg:text-[72px]">
               Strong in premium.
               <br />
               Fourth in scale.
-            </h1>
+            </h2>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-neutral-600">
               Apple combines above-market shipment growth and accelerating Mac revenue with a
               premium product position. Its constraint is worldwide PC volume.
