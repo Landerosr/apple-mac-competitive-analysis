@@ -16,7 +16,7 @@ export default function BuyingGuide() {
   const decision = decide({ model: modelId, budget: Number(budget), need, workload, compatibility, quote });
   return <section id="buying-guide" className="border-b border-neutral-200 py-10 sm:py-14">
     <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
-      <div><p className="text-sm text-blue-700">Mac buying guide · U.S.</p><h1 className="mt-3 text-4xl font-medium tracking-tight sm:text-5xl">Buy now. Or keep what works.</h1><p className="mt-4 max-w-2xl text-base leading-7 text-neutral-600">A decision based on your needs and sourced product facts—not release rumors or a made-up value score.</p></div>
+      <div><p className="text-sm text-blue-700">Mac buying guide · U.S.</p><h2 className="mt-3 text-4xl font-medium tracking-tight sm:text-5xl">Buy now. Or keep what works.</h2><p className="mt-4 max-w-2xl text-base leading-7 text-neutral-600">A decision based on your needs and sourced product facts—not release rumors or a made-up value score.</p></div>
       <a href="#analysis" className="text-sm text-neutral-600 underline underline-offset-4">Explore the market research ↓</a>
     </div>
     <div className="grid gap-7 lg:grid-cols-[1fr_1fr]">
