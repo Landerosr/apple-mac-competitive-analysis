@@ -21,6 +21,7 @@ import { ArrowUpRight, ExternalLink, Info, RefreshCcw } from 'lucide-react';
 import analysis from '@/lib/analysis.json';
 import ValueComparison from './value-comparison';
 import BuyingGuide from './buying-guide';
+import ResearchOverview from './research-overview';
 import MacBookExplorer from './macbook-explorer';
 import { Button } from '@/components/ui/button';
 import { Slider } from '@/components/ui/slider';
@@ -365,7 +366,8 @@ export default function Dashboard() {
             <span className="h-4 w-px bg-neutral-300" />
             <span className="text-sm text-neutral-500">Apple Mac analysis</span>
           </a>
-          <nav className="flex items-center gap-5 text-sm text-neutral-500" aria-label="Page links">
+          <nav className="flex flex-wrap items-center justify-end gap-3 text-xs text-neutral-500 sm:gap-5 sm:text-sm" aria-label="Page links">
+            <a href="#research" className="text-blue-700">Research</a>
             <a href="#buying-guide" className="text-blue-700">Buy or wait</a>
             <a href="#macbook-explorer" className="text-neutral-700">3D teardown</a>
             <a href="#model" className="hidden transition hover:text-neutral-950 sm:block">
@@ -379,6 +381,7 @@ export default function Dashboard() {
       </header>
 
       <div id="top" className="mx-auto max-w-[1180px] px-5 pb-16 sm:px-8">
+        <ResearchOverview />
         <BuyingGuide />
         <MacBookExplorer />
         <section className="grid gap-12 border-b border-neutral-200 py-16 sm:py-20 lg:grid-cols-[1fr_260px] lg:items-end lg:py-24">

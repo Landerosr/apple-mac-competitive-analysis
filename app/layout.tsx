@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Mac Buying Guide & Competitive Analysis | Rodolfo Landeros',
+  title: 'Apple Mac Competitive Research, 2021–2023 | Rodolfo Landeros',
   description:
-    'Should you buy a Mac or wait? Compare your needs with sourced product facts and dated prices, alongside Mac market and revenue research.',
+    'MacBook Pro competitive research during the Intel-to-Apple Silicon transition, with financial context, equity-thesis limitations and separately labeled later dashboard extensions.',
 };
 
 export default function RootLayout({

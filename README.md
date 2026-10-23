@@ -1,4 +1,14 @@
-# Apple Mac Competitive Strength Dashboard
+# Apple Mac Competitive Analysis — 2021–2023 Research
+
+My original research compared MacBook Pro products with competing laptops available during 2021–2023 as Apple moved from Intel processors to Apple Silicon. I considered performance improvements, competitive positioning, and potential financial and equity-performance implications. The investment thesis was that product differentiation could support demand and investor expectations; this is not a finding that Apple Silicon caused stock-price gains.
+
+[Read the research scope, historical context, sources and limitations](RESEARCH-2021-2023.md).
+
+The original comparison notes, exact competitor configurations, and reproducible benchmark or stock-return dataset are not included in this repository. This presentation records the author's clarified scope and adds sourced historical context; it does not reconstruct missing results. No measured correlation, causal estimate, DCF, comparable-company valuation, price target or revenue forecast is claimed for the original research.
+
+## Later dashboard extensions — separate from the original research
+
+The existing 2025–2026 market dashboard, forecasting code, consumer guide and third-party teardown below are later portfolio extensions. Their dates, methods and limitations remain visible. They are not evidence of work completed during the 2021–2023 research period.
 
 ## Interactive MacBook teardown
 
@@ -8,7 +18,7 @@ Readers can rotate, zoom, separate and reassemble the model, and inspect compone
 
 ## Buy now or wait: consumer guide
 
-The first screen now helps a reader decide whether to replace their laptop. It compares three exact starting configurations: 13-inch M5 Air (16GB/512GB), 14-inch M5 Pro laptop (16GB/1TB, base M5 chip), and 14-inch M5 Pro laptop with the M5 Pro chip (24GB/1TB).
+The consumer guide helps a reader decide whether to replace their laptop. It compares three exact starting configurations: 13-inch M5 Air (16GB/512GB), 14-inch M5 Pro laptop (16GB/1TB, base M5 chip), and 14-inch M5 Pro laptop with the M5 Pro chip (24GB/1TB).
 
 Product facts and U.S. starting prices come from Apple's real March 3, 2026 announcements, reviewed September 10, 2026. These are **dated published reference prices, not live checkout prices**. The shop pages confirmed configurations but did not expose a verifiable current checkout price in the retrieved content. We do not fill that gap with fabricated quotes. Sources:
 
@@ -31,9 +41,9 @@ Open the dashboard in your browser
 
 I built this project to answer a question I care about from both a finance and technology perspective: **Is Apple actually strong in the computer market, or does the Mac only look strong because it occupies a premium niche?**
 
-My interest comes from working as an Apple Technical Advisor and following the MacBook Pro product line. I wanted the analysis to go beyond a product-spec comparison, so I combined market shipments, Mac financial results, a small forecasting exercise, and a transparent scenario model in one dashboard.
+My interest comes from working as an Apple Technical Advisor and following the MacBook Pro product line. The later dashboard combines market shipments, Mac financial results, a small forecasting exercise, and a transparent scenario model. These extensions should be described separately from the original 2021–2023 comparison.
 
-## The short answer
+## Later dashboard conclusion (2025–2026)
 
 The base case describes Apple as a **strong premium challenger** rather than the PC market leader.
 
@@ -44,7 +54,7 @@ The base case describes Apple as a **strong premium challenger** rather than the
 
 That distinction is the point of the project: financial and product momentum can be strong even when volume leadership is not.
 
-## What is inside the project
+## Later dashboard methods
 
 The Python analysis loads the public CSV files, uses SQLite to rank vendors and calculate share changes, then evaluates three Mac revenue forecasting methods:
 
@@ -52,7 +62,7 @@ The Python analysis loads the public CSV files, uses SQLite to rank vendors and 
 2. Four-quarter moving average
 3. Linear trend with quarterly seasonality
 
-I used walk-forward validation and compared MAE, RMSE, and MAPE. The four-quarter mean had the lowest test RMSE on this small dataset, producing a FY2026 Q4 estimate of **$8.97 billion** with an 80% model range of **$7.96–$9.97 billion**.
+The forecasting extension uses walk-forward validation and compared MAE, RMSE, and MAPE. The four-quarter mean had the lowest test RMSE on this small dataset, producing a FY2026 Q4 estimate of **$8.97 billion** with an 80% model range of **$7.96–$9.97 billion**.
 
 The forecast is a portfolio exercise, not company guidance. Apple reports revenue for the entire Mac category and does not disclose standalone MacBook Pro revenue or unit sales.
 
