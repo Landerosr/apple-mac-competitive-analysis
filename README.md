@@ -1,33 +1,32 @@
-# Apple Mac Competitive Strength Dashboard
+# Quantitative Market Research: Mac Revenue Forecasting and Decision Analysis
 
-## Interactive MacBook teardown
+[Open the dashboard](https://landerosr.github.io/apple-mac-competitive-analysis/) · [Forecasting code](analytics/build_analysis.py) · [Validation tests](analytics/test_analysis.py)
 
-The 3D teardown section embeds [Inside a MacBook](https://inside-macbook.vercel.app/) by [Pulkit Saraf](https://github.com/Pulkit7070/inside-macbook), whose source and procedural geometry are MIT licensed. This third-party viewer is credited in the interface and loads only when a reader chooses to explore. Its source is not copied into this repository; availability depends on the creator's hosting. A direct full-screen link remains available if embedding fails.
+A reproducible market-research project combining time-series forecasting,
+SQL-based market comparisons and a transparent weighted decision model.
 
-Readers can rotate, zoom, separate and reassemble the model, and inspect components using the viewer's controls. The model is a **simplified educational study of the 14-inch 2026 M5 Pro**, not Apple's CAD or a service/repair model. It is not automatically relabeled when a reader chooses an Air or base M5 in the buying guide. It does not establish upgradeability or affect buying recommendations. Browser WebGL support and third-party network access are required.
+**Research question:** How do simple revenue models perform against seasonal
+baselines, and how sensitive is a competitive assessment to its assumptions?
 
-## Buy now or wait: consumer guide
+## Quantitative methods and theory
 
-The first screen now helps a reader decide whether to replace their laptop. It compares three exact starting configurations: 13-inch M5 Air (16GB/512GB), 14-inch M5 Pro laptop (16GB/1TB, base M5 chip), and 14-inch M5 Pro laptop with the M5 Pro chip (24GB/1TB).
+| Method | Application and scope |
+|---|---|
+| Seasonal naive forecast | Use the latest observation from the same fiscal quarter as a benchmark |
+| Rolling four-quarter mean | Forecast from the most recent four observations |
+| Ordinary least squares | Fit an intercept, linear time trend and quarter indicators with `numpy.linalg.lstsq` |
+| Expanding-window validation | Train only on earlier quarters and evaluate seven one-step-ahead forecasts from a 15-quarter sample |
+| Forecast error metrics | Compare MAE, RMSE and MAPE across the three candidate methods |
+| Residual-based uncertainty | Approximate an 80% range using the selected model's residual standard deviation |
+| Multi-criteria decision analysis | Normalize user-selected signal weights and test how the composite score changes |
+| SQL window functions | Rank vendors and compare market share and growth |
 
-Product facts and U.S. starting prices come from Apple's real March 3, 2026 announcements, reviewed September 10, 2026. These are **dated published reference prices, not live checkout prices**. The shop pages confirmed configurations but did not expose a verifiable current checkout price in the retrieved content. We do not fill that gap with fabricated quotes. Sources:
+The forecasting exercise is separate from the judgment-based competitive score
+and the consumer buying guide. The same seven validation observations select the
+forecasting model and report its errors; there is no independent final test set.
+The residual range is approximate and has not been calibrated on fresh data.
 
-- [Apple M5 Air announcement](https://www.apple.com/newsroom/2026/03/apple-introduces-the-new-macbook-air-with-m5/)
-- [Apple M5 Pro / Max announcement and updated base M5 configuration](https://www.apple.com/newsroom/2026/03/apple-introduces-macbook-pro-with-all-new-m5-pro-and-m5-max/)
-- [Apple Air store](https://www.apple.com/shop/buy-mac/macbook-air)
-- [Apple Pro store](https://www.apple.com/shop/buy-mac/macbook-pro)
-
-The guide asks about budget, current laptop condition, workload and software compatibility. Readers may supply an actual quote; it is labeled user-provided and is cleared on a model change. The quote comparison uses `(published reference - quote) / published reference × 100`, not a historical-low or market-wide discount estimate.
-
-Decision rules are deliberately transparent and separate from observed facts: validate inputs, check software, check budget, assess replacement need, check workload fit, then require a current quote before the affirmative buy recommendation. These are judgment rules, not a trained prediction model. A working laptop supports waiting; a limiting laptop with compatible software and an affordable quote supports buying. No synthetic data, assumed sale prices or predicted launch dates are used in this guide. Revenue forecasts and the older illustrative competitive score remain in their separate research sections and do not drive consumer advice.
-
-This is a limited shortlist, not a ranking of every Mac or Windows laptop. Actual app performance, upgraded configurations, taxes, warranty, retailer availability and ownership costs need separate consideration. Neither launch age nor Apple's revenue growth establishes whether a consumer should buy today.
-
-The Product tab now compares specific M5, M5 Pro and HP ZBook configurations with editable USD prices, price premiums and included memory/storage per $1,000. Apple defaults are March 2026 reference prices, not live quotes; HP needs a user-supplied quote. Source links and the review date appear in the interface. Capacity ratios are not performance benchmarks and do not affect the market-strength score. Family-level specifications remain separate from configuration-level value calculations.
-
-### [View the interactive dashboard →](https://landerosr.github.io/apple-mac-competitive-analysis/)
-
-Open the dashboard in your browser
+## Research context
 
 I built this project to answer a question I care about from both a finance and technology perspective: **Is Apple actually strong in the computer market, or does the Mac only look strong because it occupies a premium niche?**
 
@@ -117,3 +116,31 @@ pnpm run check
 ## Important limitations
 
 Gartner shipment figures are third-party estimates and measure shipments into channels, not consumer sell-through. Product specifications come from manufacturers and do not represent independent benchmark testing. The revenue forecast uses only a short quarterly history, so the uncertainty range should be treated seriously. This project is research and portfolio work, not investment advice.
+
+
+## Dashboard extensions
+
+## Interactive MacBook teardown
+
+The 3D teardown section embeds [Inside a MacBook](https://inside-macbook.vercel.app/) by [Pulkit Saraf](https://github.com/Pulkit7070/inside-macbook), whose source and procedural geometry are MIT licensed. This third-party viewer is credited in the interface and loads only when a reader chooses to explore. Its source is not copied into this repository; availability depends on the creator's hosting. A direct full-screen link remains available if embedding fails.
+
+Readers can rotate, zoom, separate and reassemble the model, and inspect components using the viewer's controls. The model is a **simplified educational study of the 14-inch 2026 M5 Pro**, not Apple's CAD or a service/repair model. It is not automatically relabeled when a reader chooses an Air or base M5 in the buying guide. It does not establish upgradeability or affect buying recommendations. Browser WebGL support and third-party network access are required.
+
+## Buy now or wait: consumer guide
+
+The first screen now helps a reader decide whether to replace their laptop. It compares three exact starting configurations: 13-inch M5 Air (16GB/512GB), 14-inch M5 Pro laptop (16GB/1TB, base M5 chip), and 14-inch M5 Pro laptop with the M5 Pro chip (24GB/1TB).
+
+Product facts and U.S. starting prices come from Apple's real March 3, 2026 announcements, reviewed September 10, 2026. These are **dated published reference prices, not live checkout prices**. The shop pages confirmed configurations but did not expose a verifiable current checkout price in the retrieved content. We do not fill that gap with fabricated quotes. Sources:
+
+- [Apple M5 Air announcement](https://www.apple.com/newsroom/2026/03/apple-introduces-the-new-macbook-air-with-m5/)
+- [Apple M5 Pro / Max announcement and updated base M5 configuration](https://www.apple.com/newsroom/2026/03/apple-introduces-macbook-pro-with-all-new-m5-pro-and-m5-max/)
+- [Apple Air store](https://www.apple.com/shop/buy-mac/macbook-air)
+- [Apple Pro store](https://www.apple.com/shop/buy-mac/macbook-pro)
+
+The guide asks about budget, current laptop condition, workload and software compatibility. Readers may supply an actual quote; it is labeled user-provided and is cleared on a model change. The quote comparison uses `(published reference - quote) / published reference × 100`, not a historical-low or market-wide discount estimate.
+
+Decision rules are deliberately transparent and separate from observed facts: validate inputs, check software, check budget, assess replacement need, check workload fit, then require a current quote before the affirmative buy recommendation. These are judgment rules, not a trained prediction model. A working laptop supports waiting; a limiting laptop with compatible software and an affordable quote supports buying. No synthetic data, assumed sale prices or predicted launch dates are used in this guide. Revenue forecasts and the older illustrative competitive score remain in their separate research sections and do not drive consumer advice.
+
+This is a limited shortlist, not a ranking of every Mac or Windows laptop. Actual app performance, upgraded configurations, taxes, warranty, retailer availability and ownership costs need separate consideration. Neither launch age nor Apple's revenue growth establishes whether a consumer should buy today.
+
+The Product tab now compares specific M5, M5 Pro and HP ZBook configurations with editable USD prices, price premiums and included memory/storage per $1,000. Apple defaults are March 2026 reference prices, not live quotes; HP needs a user-supplied quote. Source links and the review date appear in the interface. Capacity ratios are not performance benchmarks and do not affect the market-strength score. Family-level specifications remain separate from configuration-level value calculations.
