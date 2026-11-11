@@ -1,6 +1,8 @@
 # Quantitative Market Research: Mac Revenue Forecasting and Decision Analysis
 
-[Open the dashboard](https://landerosr.github.io/apple-mac-competitive-analysis/) · [Forecasting code](analytics/build_analysis.py) · [Validation tests](analytics/test_analysis.py)
+This repository is the primary project portfolio. The research code, results and documentation are available here without needing a separate website; interface source is preserved for optional local use.
+
+[Forecasting code](analytics/build_analysis.py) · [Validation tests](analytics/test_analysis.py)
 
 A reproducible market-research project combining time-series forecasting,
 SQL-based market comparisons and a transparent weighted decision model.
@@ -95,9 +97,7 @@ Then open `http://localhost:3000`.
 
 Requirements: Node.js 22.13 or newer, pnpm, and Python 3.10 or newer. On Windows, activate the environment with `.venv\Scripts\activate` instead.
 
-## Publish to GitHub Pages
-
-Run `pnpm run build:pages` on macOS or Linux, then commit the generated `docs/` folder. GitHub Pages serves the `main` branch's `/docs` folder. This preserves the interactive charts and scenario controls without a server.
+## Verify the project
 
 To rebuild and verify the project:
 
